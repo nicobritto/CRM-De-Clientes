@@ -1,51 +1,19 @@
 import {useLoaderData} from 'react-router-dom';
 import Cliente from '../components/Cliente';
+import {obtenerClientes} from '../data/clientes'
 
 export function loader () {
-  const clientes = [
-    {
-        id: 1,
-        nombre: 'Juan',
-        telefono: 102013313,
-        email: "juan@juan.com",
-        empresa: 'Codigo Con Nico'
-    },
-    {
-        id: 2,
-        nombre: 'Karen',
-        telefono: 138198313,
-        email: "karen@juan.com",
-        empresa: 'Codigo Con Nico'
-    },
-    {
-        id: 3,
-        nombre: 'Josue',
-        telefono: 31983913,
-        email: "josue@juan.com",
-        empresa: 'Codigo Con Nico'
-    },
-    {
-        id: 4,
-        nombre: 'Miguel',
-        telefono: 319381983,
-        email: "miguel@juan.com",
-        empresa: 'Codigo Con Nico'
-    },
-    {
-        id: 5,
-        nombre: 'Pedro',
-        telefono: 1398198938,
-        email: "pedro@juan.com",
-        empresa: 'Codigo Con Nico'
-    },
-];
-  return clientes;
+  // para ejecutar la base de datos : json-server --watch db.json se ejecuta localmente con JSON Server
+  // y es el archivo que se llama db.json
+  const clientes=obtenerClientes()
+
+  return  clientes
 }
 
 
 const Index = () => {
 
-  const clientes=useLoaderData();
+  const clientes=useLoaderData();//useLoaderData es parqa obtener lo que retorno en mis funciones loader que es la de arriba
  
 
   return (
