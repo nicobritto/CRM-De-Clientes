@@ -7,7 +7,8 @@ export function loader () {
   // y es el archivo que se llama db.json
   const clientes=obtenerClientes()
 
-  return  clientes
+  return clientes
+
 }
 
 

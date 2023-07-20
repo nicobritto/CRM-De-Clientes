@@ -1,6 +1,7 @@
-import { useNavigate ,Form,useActionData} from 'react-router-dom'
+import { useNavigate ,Form,useActionData,redirect} from 'react-router-dom'
 import Formulario from '../components/Formulario'
 import Error from '../components/Error'
+import {agregarCliente} from '../data/clientes'
 
 export  async function action({request}){
 
@@ -28,6 +29,11 @@ export  async function action({request}){
     return errores
   }
 
+
+  await agregarCliente(datos);
+
+  return redirect('/')
+
 }
 
 const NuevoCliente = () => {
@@ -53,7 +59,7 @@ const NuevoCliente = () => {
       {errores?.length && errores.map((error,i) => <Error key={i}>{error}</Error>)}
 
         <Form 
-          method='post'   noValidate >#el metodo  method='post' va buscar un action que es la funcion de arribaa 
+          method='post'   noValidate > { /* el metodo  method='post' va buscar un action que es la funcion de arribaa   */}
           <Formulario />
           <input
             type='submit'

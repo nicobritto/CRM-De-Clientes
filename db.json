@@ -1,39 +1,47 @@
- {
-    "clientes" : [
-        {
-            "id": 1,
-            "nombre": "Juan",
-            "telefono": 102013313,
-            "email": "juan@juan.com",
-            "empresa": "Codigo Con Nico"
-        },
-        {
-            "id": 2,
-            "nombre": "Karen",
-            "telefono": 138198313,
-            "email": "karen@juan.com",
-            "empresa": "Codigo Con Nico"
-        },
-        {
-            "id": 3,
-            "nombre": "Josue",
-            "telefono": 31983913,
-            "email": "josue@juan.com",
-            "empresa": "Codigo Con Nico"
-        },
-        {
-            "id": 4,
-            "nombre": "Miguel",
-            "telefono": 319381983,
-            "email": "miguel@juan.com",
-            "empresa": "Codigo Con Nico"
-        },
-        {
-            "id": 5,
-            "nombre": "Pedro",
-            "telefono": 1398198938,
-            "email": "pedro@juan.com",
-            "empresa": "Codigo Con Nico"
-        }
-    ]
- }
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "telefono": 102013313,
+      "email": "juan@juan.com",
+      "empresa": "Codigo Con Nico"
+    },
+    {
+      "id": 2,
+      "nombre": "Karen",
+      "telefono": 138198313,
+      "email": "karen@juan.com",
+      "empresa": "Codigo Con Nico"
+    },
+    {
+      "id": 3,
+      "nombre": "Josue",
+      "telefono": 31983913,
+      "email": "josue@juan.com",
+      "empresa": "Codigo Con Nico"
+    },
+    {
+      "id": 4,
+      "nombre": "Miguel",
+      "telefono": 319381983,
+      "email": "miguel@juan.com",
+      "empresa": "Codigo Con Nico"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro",
+      "telefono": 1398198938,
+      "email": "pedro@juan.com",
+      "empresa": "Codigo Con Nico"
+    },
+    {
+      "nombre": "mariop",
+      "empresa": "mariop",
+      "email": "mariop@mariop.com",
+      "telefono": "321654",
+      "notas": "asd321",
+      "id": 6
+    }
+  ]
+}
