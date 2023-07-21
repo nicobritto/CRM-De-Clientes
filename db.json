@@ -1,24 +1,18 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nombre": "Juan",
-      "telefono": 102013313,
+      "nombre": "Juan actual",
+      "empresa": "Codigo Con Nico",
       "email": "juan@juan.com",
-      "empresa": "Codigo Con Nico"
+      "telefono": "102013313",
+      "notas": "asd",
+      "id": 1
     },
     {
       "id": 2,
       "nombre": "Karen",
       "telefono": 138198313,
       "email": "karen@juan.com",
-      "empresa": "Codigo Con Nico"
-    },
-    {
-      "id": 3,
-      "nombre": "Josue",
-      "telefono": 31983913,
-      "email": "josue@juan.com",
       "empresa": "Codigo Con Nico"
     },
     {

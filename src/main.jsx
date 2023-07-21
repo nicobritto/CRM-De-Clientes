@@ -6,6 +6,8 @@ import Layout from './components/Layout'
 import NuevoCliente,{action as nuevoClienteAction} from './paginas/NuevoCliente'
 import Index,{loader as clientesLoader} from './paginas/Index'
 import ErrorPage from './components/ErrorPage'
+import EditarCliente,{loader as editarClienteLoader,action as editarClienteAction} from './paginas/EditarCliente'
+import {action as eliminarClienteAction} from './components/Cliente'
 
 const router =createBrowserRouter([
   {
@@ -21,8 +23,25 @@ const router =createBrowserRouter([
       {
         path:'/cliente/nuevo',
         element:<NuevoCliente/>,
-        action: nuevoClienteAction
+        action: nuevoClienteAction,
+        errorElement: <ErrorPage/>
+      },
+      {
+        path:'/cliente/:clienteId/editar',
+        element:<EditarCliente/>,
+        loader: editarClienteLoader,
+        action: editarClienteAction,
+        errorElement: <ErrorPage/>
+
+      },
+      {
+        path:'/cliente/:clienteId/eliminar',
+        action: eliminarClienteAction
+
+
       }
+
+
     ]
   },
 
